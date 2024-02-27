@@ -1,0 +1,66 @@
+<div class="container">
+    <table class="table table-bordered">
+        <thead class="table-headers">
+            <tr>
+                <th scope="col"><button class="headers">Resource ID</button></th>
+                <th scope="col"><button class="headers">Job Role</button></th>
+                <th scope="col"><button class="headers">Org Unit</button></th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <td>1</td>
+                <td>Software Engineer</td>
+                <td>Unit 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="center">
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="addButton">Add New Resource</button>
+    </div>
+</div>
+<!-- Button trigger modal(bootstrap- https://getbootstrap.com/docs/5.3/components/modal/#how-it-works) -->
+
+<!-- Modal (The content when a button is pressed)-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Resource</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <!--Form to add employee details bootstrap-https://getbootstrap.com/docs/5.3/forms/overview/#overview -->
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <p>Resource Name*</p>
+                        <label for="exampleInputEmail1" class="form-label">Name : </label>
+                        <input type="text" formControlName="resourceName" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <p>Resource ID*</p>
+                        <label for="exampleInputPassword1" class="form-label">ID : </label>
+                        <input type="text" formControlName="resourceID" class="form-control" id="exampleInputPassword1"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <p>Job Role*</p>
+                        <label for="exampleInputPassword1" class="form-label">Job Role : </label>
+                        <input type="text" formControlName="jobRole" class="form-control" id="exampleInputPassword1"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <p>Organizational Unit</p>
+                        <label for="exampleInputPassword1" class="form-label">Org Unit : </label>
+                        <input type="text" formControlName="orgUnit" class="form-control" id="exampleInputPassword1">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" (click)="postResourceDetails()" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </div>
+</div>

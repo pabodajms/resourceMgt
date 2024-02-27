@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+    width: 50%;
+    margin-left: 0;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    /* top: 50%; */
+    left: 25%;
+    width: 75%;
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+}
+
+
+.addButton {
+    /* padding : 2px 100px; */
+    width: 75%;
+    color: #7752fe;
+    background-color: white;
+    border: rgb(203, 203, 203) 1px solid;
+    border-radius: 5px;
+}
+
+#exampleModalLabel {
+    color: #7752fe;
+}
+
+.form-label {
+    color: #8e8ffa;
+}
+
+.table-headers .headers {
+    margin: 5px;
+    padding: 2px 50px;
+    background-color: #c2d9ff;
+    color: #04175a;
+    border: 1px #93b8f3 solid;
+    border-radius: 5px;
+}
+
+.table-headers {
+    border-top: 1px white solid;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+.table-body {
+    text-align: center;
+}
