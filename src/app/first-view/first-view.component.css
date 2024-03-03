@@ -1,27 +1,28 @@
 .container {
     position: relative;
-    width: 50%;
-    margin-left: 0;
-}
-
-.center {
-    margin: 0;
-    position: absolute;
-    /* top: 50%; */
-    left: 25%;
-    width: 75%;
-    /* -ms-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
-}
-
-
-.addButton {
-    /* padding : 2px 100px; */
-    width: 75%;
-    color: #7752fe;
-    background-color: white;
-    border: rgb(203, 203, 203) 1px solid;
+    width: 45%;
+    margin: 10px;
+    border: 1px #ced2d9 solid;
+    display: inline-block;
     border-radius: 5px;
+}
+
+.topic {
+    background-color: #7752fe;
+    padding: 5px;
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+    color: white;
+    border-radius: 5px;
+}
+
+.input-group {
+    width: 30%;
+    position: relative;
+    float: right;
+    right: 0px;
+    margin-top: 5px;
 }
 
 #exampleModalLabel {
@@ -37,6 +38,7 @@
     padding: 2px 50px;
     background-color: #c2d9ff;
     color: #04175a;
+    font-weight: bold;
     border: 1px #93b8f3 solid;
     border-radius: 5px;
 }
